@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src = "script.js"></script>
+    
+    <title>CSS Assignment 01</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        body {
+            margin: 0;
+            background: #e6e6e6;
+            background-image: url("contact1.jpg");
+            
+        }
+        .showSlide {
+            display: none
+        }
+            .showSlide img {
+                width: 100%;
+            }
+        .slidercontainer {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        .left, .right {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+        .right {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+            .left:hover, .right:hover {
+                background-color: rgba(115, 115, 115, 0.8);
+            }
+        .content {
+            color: #eff5d4;
+            font-size: 30px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .active {
+            background-color: #717171;
+        }
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        .btn button{
+            width:100px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: bisque;
+            color: black;
+            border-color: solid black;
+        }
+        .btn a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <table>
+        <th><div class="logo">
+            <img class="logo" src="logo.png">
+        </div></th>
+        <th><div>
+        <h1 class="h1">Mandala Hotel & Spa</h1>
+        </div></th>
+        </table>
+    <div class="slidercontainer">
+        <div class="showSlide fade">
+            <img src="home.jpg" />
+            <div class="content">HOME</div>
+        </div>
+        <div class="showSlide fade">
+            <img src="hotel1.jpg" />
+            <div class="content">FACILITIES</div>
+        </div>
+
+        <div class="showSlide fade">
+            <img src="offers.jpg" />
+            
+            <div class="content">OFFERS</div>
+        </div>
+        <div class="showSlide fade">
+            <img src="spa.jpg" />
+            
+            <div class="content">CONTACT</div>
+        </div>
+        <!-- Navigation arrows -->
+        
+        <a class="right" onclick="nextSlide(1)"> > </a>
+        <div class="btn">
+            <button><a href="index.html">SEE MORE</a></button>
+        </div>
+       
+    </div>
+
+    <script type="text/javascript">
+        var slide_index = 1;
+        displaySlides(slide_index);
+
+        function nextSlide(n) {
+            displaySlides(slide_index += n);
+        }
+
+        function currentSlide(n) {
+            displaySlides(slide_index = n);
+        }
+
+        function displaySlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("showSlide");
+            if (n > slides.length) { slide_index = 1 }
+            if (n < 1) { slide_index = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slide_index - 1].style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

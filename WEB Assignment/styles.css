@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+html {
+    scroll-behavior: smooth;
+  }
+.header{
+    background-color:beige;
+    text-align: center;
+    font-family: 'Playfair Display', serif;;
+    font-size: 30px;
+    letter-spacing: 4px;
+    padding: 15px;
+    border-width: 2px;
+    height: 100px;
+    margin:auto;
+    text-transform: uppercase;
+}
+
+.h1{
+    
+    padding-left: 100px;
+    color: #906b1e;
+    text-align: center;
+}
+
+.contact a{
+    display: block;
+    float: right;
+    font-size: small;
+    letter-spacing: normal;
+    padding: 5px 145px;
+    color: rgb(255, 251, 251);
+    text-decoration: none;
+}
+
+.logo{
+    float: left;
+    height: 135px;
+    width: 150px;
+    margin-left: 30px;
+    margin-top: 0;
+}
+
+.navigation {
+    text-align: center;
+    background-color: #012216;
+    height: 50px;
+    z-index: 1;
+    list-style-type: none;
+    overflow: hidden;  
+    position:sticky; 
+    top: 0;
+}
+  
+li {
+    float: left;
+    list-style:none;
+    font-size: 20px;
+}
+
+.li-item{
+    margin-left: 100px; 
+}
+  
+li a {
+    display: block;
+    color: white;
+    padding: 5px 16px;
+    margin: 10px;
+    text-decoration: none;   
+}
+  
+li a:hover:not(.active) {
+    background-color: #906b1e;
+}
+
+.active {
+    background-color: #906b1e;
+}
+
+.para {
+    position: relative;
+    text-align: center;
+    background-position: center;
+    padding-top: 60px;
+    height: 300px;
+    background-image: url(home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 18%;
+    background-color: rgb(0,0,0,.4);
+}
+
+.para h6 h1 p{
+    background-color: rgb(0,0,0,.4);
+}
+
+.description{
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding-top: 20px;
+    text-transform: none;
+    margin: 5px;
+}
+
+.text1{
+    font-size: 20px;
+    color:#906b1e;
+    letter-spacing: normal;
+    padding-top: 20px;
+}
+
+.text2{
+    letter-spacing: 1px;
+}
+
+.events{
+    letter-spacing: normal;
+    font-weight: 100;
+    font-size: 20px; 
+    text-transform: capitalize;
+    margin: 15px;
+    float: left;
+    width: 45%;
+    padding: 10px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 3px 4px 8px #888888;
+    background-image: url(event.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.e1{
+    padding-top: 100px;
+    color: white;
+    background-color: rgb(0,0,0,.4);
+
+}
+
+.e2{
+    font-size: 15px;
+    font-weight: 100;
+    padding-top: 20px;
+    color: white;
+    background-color: rgb(0,0,0,.4);
+}
+
+.business{
+    letter-spacing: normal;
+    font-weight: 100;
+    font-size: 20px; 
+    text-transform: capitalize;
+    margin: 15px;
+    float: left;
+    width: 45%;
+    padding: 10px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 3px 4px 8px #888888;
+    background-image: url(business.jpg);
+    background-size: cover;
+    
+}
+
+.b1{
+    color: white;
+    padding-top: 100px;
+    background-color: rgb(0,0,0,.4);
+}
+
+.b2{
+    font-size: 15px;
+    font-weight: 100;
+    padding-top: 20px;
+    color: white;
+    background-color: rgb(0,0,0,.4); 
+}
+
+.button{
+    background-color: white; 
+    color: black; 
+    border: none;
+    border-radius: 5px;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #906b1e;
+    color: white;
+  }
+
+.drop-downs{
+    justify-content: center;
+    letter-spacing: normal;
+    text-transform: none;
+    font-size: 15px;
+    column-gap: 130px;
+    display: flex;
+    background-color: rgb(144, 107, 30);
+    color: rgb(19, 18, 18);
+    padding: 50px;
+    font-weight: 400;  
+}
+
+.type-room .check-ins .checkout {
+    padding: 30px;
+
+}
+
+.footer table{
+    width: 1490px;
+    border: 5px;
+    font-size: 15px;
+    font-weight: 50;
+    padding-top: 20px;
+    padding-right: 50px; 
+    padding-left: 50px;
+    letter-spacing: normal;
+    text-transform: none;
+    background-image: url(footer1.png);
+    background-size:cover;  
+    background-color: rgb(0,0,0,.4);
+}
+
+.footer_bottom{
+    font-size: 15px;
+    font-weight: 50;
+    text-transform: none;
+    letter-spacing: normal;
+}
+#myBox {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: all 1s ease;
+  }
+  
+  #myBox.animate {
+    transform: translateX(100px) rotate(45deg);
+    background-color: red;
+  }
+  
